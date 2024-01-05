@@ -1,0 +1,14 @@
+{
+    "easy":{
+        "cards":{
+            "red": ["JGw6rCG.png","mWcIip0.png"],
+            "green": ["aqNrfMk.png","qtUvzyq.png"],
+            "minion" : ["jjqpMQQ.png","QPobO3c.png"],
+            "grey": ["nAbjezL.png", "oag8AzJ.png"],
+            "yellow": ["j0xofFp.png", "Ztgfvs9.png"],
+            "orange": ["NxIuoqi.png", "T3wAnJv.png"],
+            "purple": ["a9mVeJt.png"]
+        },
+        "cards_open": "1500"
+    }
+}

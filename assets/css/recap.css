@@ -1,0 +1,43 @@
+.controls
+{
+    width: 950px;
+    max-width: 95%;
+    height: 75px;
+    margin: 40px auto 25px auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    border: 1px solid white;
+    border-radius: 9px;
+}
+
+.controls span
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input[type="button"]
+{
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-weight: bold;
+  height: 30px;
+  width: 150px;
+  border-radius: 9px;
+}
+
+input[type="button"]:hover
+{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}

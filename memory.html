@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory</title>
+        
+        <link rel = "stylesheet" href = "assets/css/style.css"/>
+        <link rel = "stylesheet" href = "assets/css/memory.css"/>
+        <link rel = "stylesheet" href = "assets/css/message-box.css"/>
+
+        <script src = "plugins/jquery.js"></script>
+        <script src = "assets/js/messagebox.js"></script>
+        <script type="module" src = "assets/js/memory.js"></script>
+    </head>
+    <body ID = "body-ID">
+        <div CLASS = "collected-modal" ID = "collectedModal-ID">
+            <h3>Collected</h3>
+            <div CLASS = "collected-modal-content" ID = "collected-ID">
+            </div>
+        </div>
+        <h1>Play memory</h1>
+        <div CLASS = "game-data">
+            <span><b>Time:</b> <span ID = "timer-ID">160</span></span>
+            <span><b>Cards remain:</b> <span ID = "cards-remain-ID">0</span></span>
+            <span><b>Cards collected:</b> <span ID = "cards-collected-ID">0</span></span>
+            <span CLASS = "pointer" ID = "collected-open-ID"><b>Collected Decks</b></span>
+        </div>
+        <div CLASS = "memory-container" ID = "memory-container-ID">
+        </div>
+        <div CLASS = "end-modal" ID = "end-modal-ID">
+            <div CLASS = "end-modal-container">
+                <h2>Game stats</h2>
+                <h3 ID = "game-won-ID">Game</h3>
+                <div CLASS = "end-modal-container-content" ID = "end-modal-content-ID">
+                </div>
+                <div CLASS = "end-modal-container-buttons">
+                    <input type = "button" value = "Back" onclick = "window.location = 'index.html';"/>
+                    <input type = "button" value = "New Game" onclick="location.reload();"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

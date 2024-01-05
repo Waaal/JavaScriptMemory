@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory</title>
+        
+        <link rel = "stylesheet" href = "assets/css/style.css"/>
+        <link rel = "stylesheet" href = "assets/css/index.css"/>
+        <link rel = "stylesheet" href = "assets/css/message-box.css"/>
+
+        <script src = "assets/js/modal.js"></script>
+        <script src = "plugins/jquery.js"></script>
+        <script src = "assets/js/messagebox.js"></script>
+        <script src = "assets/js/settings.js"></script>
+
+    </head>
+    <body ID = "body-ID" onload = "initModal();initSettings();">
+        <div CLASS = "modal" ID = "modal-ID">
+            <div CLASS = "modal-content-contaner">
+                <div CLASS = "modal-grid-headline full">Settings</div>
+                <div CLASS = "modal-grid-column">
+                    <span>Time Limit</span>
+                    <input type = "number" value = "160" ID = "time-ID" data-storage-name="timeLimit"/>
+                </div>
+                <div CLASS = "modal-grid-column">
+                    <span>Unlimited Time</span>
+                    <select ID = "unlimited-time-ID" data-storage-name="unlimitedTime" name = "un">
+                        <option value = "yes">Yes</option>
+                        <option value = "no" selected>No</option>
+                    </select>
+                </div>
+                <div CLASS = "modal-grid-column">
+                    <span>Card Number</span>
+                    <input type = "number" value = "16" ID = "cardNumber-ID" data-storage-name="cardNumber"/>
+                </div>
+                <div CLASS = "modal-grid-column">
+                    <span>Difficulty</span>
+                    <select ID = "difficulty-ID" data-storage-name="difficulty" name = "dif">
+                        <option value = "easy" selected>Easy</option>
+                        <option value = "medium">Medium</option>
+                        <option value = "hard">Hard</option>
+                    </select>
+                </div>
+                <div CLASS = "modal-grid-column full">
+                    <span>Your name</span>
+                    <input type = "text" placeholder="username" ID = "username-ID" data-storage-name="username"/>
+                </div>
+                <div CLASS = "modal-grid-column">
+                    <input type = "button" value = "Reset" onclick = "resetData()"/>
+                </div>
+                <div CLASS = "modal-grid-column">
+                    <input type = "button" value = "Close" onclick="closeModal()"/>
+                </div>
+            </div>
+        </div>
+        <h1>Memory</h1>
+        <p>Are you winning son?</p>
+        <input type = "button" value = "Play" onclick="location.href='memory.html';"/>
+        <input type = "button" value = "Recap games" onclick="location.href='games.html';"/>
+        <input type = "button" value = "Settings" onclick="openModal()"/>
+        <input type = "button" value = "Credits" onclick ="alert('By Luke');"/>
+
+        <!--div CLASS = "message-container">
+            <div CLASS = "message-container-color"></div>
+            <div CLASS = "message-container-icon"><span style="font-size:20px">&#10060;</span></div>
+            <div CLASS = "message-container-text">User not found</div>
+        </div!-->
+    </body>
+</html>

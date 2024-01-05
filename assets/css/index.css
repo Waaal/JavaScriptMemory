@@ -1,0 +1,109 @@
+h1
+{
+    display: block;
+    text-align: center;
+    margin: 40px 0px 25px 0px;
+    font-size: 48px;
+}
+
+p
+{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="button"]
+{
+    display: block;
+    background-color: #111111;
+    color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 4px;
+    font-size: 1em;
+    width: 100px;
+    margin: 25px auto 0px auto;
+}
+
+input[type="button"]:hover
+{
+    cursor: pointer;
+    color: #111111;
+    background-color: white;
+}
+
+.modal
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+    background-color: rgba(31,31,31, 0.7);
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 2;
+}
+
+.modal-content-contaner
+{
+    width: 500px;
+    max-width: 95%;
+
+    height: 700px;
+    max-height: 95%;
+
+    background-color: #111111;
+    border-radius: 9px;
+    margin: 125px auto 0px auto;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: start;
+    row-gap: 25px;
+    overflow-y: auto;
+}
+
+.modal-grid-headline
+{
+    font-size: 38px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 9px;
+    height: fit-content;
+}
+
+.modal-grid-column
+{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column; 
+    gap: 7px;
+    align-items: center;
+}
+
+.full
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input[type="number"], input[type="text"], input[type="button"], select
+{
+    background-color: #111111;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 9px;
+
+    font-size: 1em;
+    padding: 4px;
+    width: 175px;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory</title>
+        
+        <link rel = "stylesheet" href = "assets/css/style.css"/>
+        <link rel = "stylesheet" href = "assets/css/memory.css"/>
+        <link rel = "stylesheet" href = "assets/css/message-box.css"/>
+        <link rel = "stylesheet" href = "assets/css/recap.css"/>
+
+        <script src = "plugins/jquery.js"></script>
+        <script src = "assets/js/messagebox.js"></script>
+        <script type="module" src = "assets/js/recap.js"></script>
+    </head>
+    <body ID = "body-ID">
+        <h1>Recap game</h1>
+        <div CLASS = "controls">
+            <input type = "button" value = "Start" ID = "start-ID"/>
+            <input type = "button" value = "Stop" ID = "stop-ID"/>
+            <input type = "button" value = "Reset" ID = "reset-ID"/>
+            <span>
+                <input type = "button" value = "<" style = "width: 40px;" ID = "slow-ID"/>
+                <label ID = "speed-label-ID">1x</label>
+                <input type = "button" value = ">" style = "width: 40px;" ID = "fast-ID"/>
+            </span>
+        </div>
+        <div CLASS = "memory-container" ID = "memory-container-ID">
+        </div>
+    </body>
+</html>
